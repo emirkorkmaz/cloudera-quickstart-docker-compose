@@ -27,5 +27,23 @@ First, it is necessary to have Docker and Docker compose running on your OS.
 ``` sudo pip install docker-compose ```  
 * Update python and PIP  
 ``` sudo yum upgrade python* ```  
-``` sudo pip install --upgrade pip ```   
+``` sudo pip install --upgrade pip ```  
+
+#### Setting up Single Node Cloudera Hadoop with Docker Compose  
+* Get the docker-compose.yaml file from https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/cloudera-quickstart/docker-compose.yaml and store it in a proper folder  
+* Change directory to the folder where docker-compose.yaml exists  
+* Execute following command and wait for docker and docker compose do the things for you (If you dont want to see the trace simply execute the command on detach mode)  
+``` docker-compose up ``` 
+* In the end, you see following final lines that means your Single Node Cloudera Hadoop is ready to use  
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/installation_done.png "Installation Done!")  
+* Try to each and use Hue, http://IP:8888. User name and password is cloudera/cloudera  
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/hue_login.png "Hue Login")  
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/hue_my_documents.png "Hue My Documents")  
+
+#### Start up Cloudera Manager
+Having installation completed, Cloudera Manager is still disabled and it is better to enable it. Here is the simple guide for enabling Cloudera Manager  
+
+* List the quickstart container and attach to it  
+
+
 

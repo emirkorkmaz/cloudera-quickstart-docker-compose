@@ -44,6 +44,12 @@ First, it is necessary to have Docker and Docker compose running on your OS.
 Having installation completed, Cloudera Manager is still disabled and it is better to enable it. Here is the simple guide for enabling Cloudera Manager  
 
 * List the quickstart container and attach to it  
+``` docker ps ```   
+``` docker attach container-id ```  
+* Execute following command in container for enabling Cloudera Manager. It will take couple of minutes to be completed  
+``` /home/cloudera/cloudera-manager --express ```  
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/cm_installed.png "CM Installed")  
+* When CM is being started, it stops all services. Hence it is necessary to restart them all over Cloudera Manager
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/cm_start.png "CM Installed")  
 
-
-
+and we're done! Single node Cloudera Hadoop is ready for use

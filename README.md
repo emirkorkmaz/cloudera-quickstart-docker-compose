@@ -52,4 +52,6 @@ Having installation completed, Cloudera Manager is still disabled and it is bett
 * When CM is being started, it stops all services. Hence it is necessary to restart them all over Cloudera Manager
 ![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/cm_start.png "CM Installed")  
 
-and we're done! Single node Cloudera Hadoop is ready for use
+and We're done! Single node Cloudera Hadoop is ready for use
+
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/cm_services_started.png "We're Done")  

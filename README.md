@@ -14,4 +14,18 @@ First, it is necessary to have Docker and Docker compose running on your OS.
 ``` sudo systemctl start docker ```  
 ``` sudo systemctl status docker ```  
 ``` sudo systemctl enable docker ```  
-* Status should be similar to below
+* An optional step: If you would like to run "docker" command without sudo, do the following (replace username with yours)  
+``` sudo usermod -aG docker username ``` 
+* Status should be similar to below  
+![alt text](https://github.com/emirkorkmaz/cloudera-quickstart-docker-compose/blob/master/misc/images/docker_status.png "Docker Status")  
+
+#### Installing Docker Compose
+* Get epel repositories and install PIP  
+``` sudo yum install epel-release ```  
+``` sudo yum install -y python-pip ```  
+* Install Docker Compose with PIP  
+``` sudo pip install docker-compose ```  
+* Update python and PIP  
+``` sudo yum upgrade python* ```  
+``` sudo pip install --upgrade pip ```   
+

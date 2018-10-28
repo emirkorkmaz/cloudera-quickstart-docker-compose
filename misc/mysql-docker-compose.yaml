@@ -10,6 +10,9 @@ services:
     restart: always
     environment:
       MYSQL_ROOT_PASSWORD: cdh_mysql
+    tty: true
+    stdin_open: true
+    privileged: true
     volumes:
       - /var/shared_for_mysql/:/var/lib/mysql
 
@@ -18,3 +21,11 @@ services:
     restart: always
     ports:
       - 58080:8080
+    tty: true
+    stdin_open: true
+    privileged: true
+
+networks:
+   default:
+       external:
+           name: cdh_default

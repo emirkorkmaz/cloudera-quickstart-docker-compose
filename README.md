@@ -25,6 +25,7 @@ First, it is necessary to have Docker and Docker compose running on your OS.
 ``` sudo yum install -y python-pip ```  
 * Install Docker Compose with PIP  
 ``` sudo pip install docker-compose ```  
+``` sudo pip install docker-compose --ignore-installed ``` (in case you're running pip 10)  
 * Update python and PIP  
 ``` sudo yum upgrade python* ```  
 ``` sudo pip install --upgrade pip ```  
